@@ -1,0 +1,66 @@
+@use "./styles/device" as *;
+@use "./styles/colors" as *;
+@import "./styles/buttons";
+@import "./styles/utilities";
+@import "./styles/mixins";
+@import "./styles/sidebar";
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  color: $colorPrimary;
+}
+
+.header {
+  height: 10vmax;
+  display: flex;
+  border-bottom: 1px solid $border-bottom;
+}
+.nav_title {
+  @include flex(row, center, center, 0);
+  margin: auto;
+}
+.title_text {
+  font-size: 2rem;
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+}
+.body_wrapper {
+  position: relative;
+}
+.content {
+  width: 100%;
+  padding: 5rem 0;
+}
+.form_wrapper {
+  width: min(80%, 30rem);
+  margin: auto;
+}
+.form {
+  width: 100%;
+}
+.input_group {
+  width: 100%;
+  @include flex(column, center, flex-start, 0);
+}
+.input_field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid $border;
+  flex: 1;
+}
+.button_group {
+  width: 100%;
+  @include flex(row, center, center, 10px);
+}

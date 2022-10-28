@@ -1,0 +1,10 @@
+.sidebar {
+  display: block;
+  position: absolute;
+  background-color: rgb(241, 241, 241);
+  width: 80vw;
+  left: 0;
+  top: 0;
+  height: calc(100vh - 10vmax);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.3);
+}
